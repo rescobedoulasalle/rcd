@@ -242,4 +242,11 @@ docker compose down
 ## Referencias 
 - [Cisco Networking Academy - Recursos de aprendizaje - Cisco Packet Tracer
 ](https://www.netacad.com/resources/lab-downloads?courseLang=es-XL)
+- [Cisco Packet Tracer](https://www.netacad.com/es/cisco-packet-tracer)
+- [Guía de Docker para principiantes: cómo crear tu primera aplicación Docker](https://www.freecodecamp.org/espanol/news/guia-de-docker-para-principiantes-como-crear-tu-primera-aplicacion-docker/)
+- [Capítulo 1. Primeros pasos con Docker](https://recetas-docker.readthedocs.io/es/latest/capitulo_1.html)
+- [ifconfig(8) - Linux man page](https://linux.die.net/man/8/ifconfig)
+- [ping(8) - Linux man page](https://linux.die.net/man/8/ping)
+- [traceroute(8) - Linux man page](https://linux.die.net/man/8/traceroute)
+- 
 
