@@ -14,6 +14,7 @@
 - Herramienta de simulación para la configuración de redes.
 - Puedes experimentar mientras construyes, administrar y asegurar infraestructuras.
 
+### LAN (Red de Area Local)
 ![Secciones en CPT](img/cpt-secciones.png)
 
 - **Sección 1**: Barra de herramientas con la cual se puede crear un nuevo esquema, guardar una configuración, zoom, entre otras funciones.
