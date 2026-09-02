@@ -52,7 +52,7 @@
 
 - **Paso 4: Agregar los nuevos equipos al espacio de trabajo**
   - Ve a la esquina inferior izquierda, haz clic en Network Devices, luego entra en la subcategoría Wireless Devices.
-  - Selecciona el dispositivo llamado Home Gateway (el router inalámbrico residencial común) y arrástralo a tu pantalla.
+  - Selecciona el dispositivo llamado Home Router (el router inalámbrico residencial común) y arrástralo a tu pantalla.
   - Ahora cambia a la categoría End Devices y arrastra una Laptop al espacio de trabajo.
 - **Paso 5: Conectar el Router Wi-Fi al Switch (Cableado)**
   - Para que los dispositivos inalámbricos tengan acceso a las PCs que ya tenías, el router debe estar unido al switch central.
