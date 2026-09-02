@@ -48,7 +48,7 @@
  
 ## WIFI (Comunicación inalámbrica IEEE 802.11)
 
-![LAN](img/cpt-lan-wifi.png)
+![LAN](img/lan-wifi.png)
 
 - **Paso 4: Agregar los nuevos equipos al espacio de trabajo**
   - Ve a la esquina inferior izquierda, haz clic en Network Devices, luego entra en la subcategoría Wireless Devices.
