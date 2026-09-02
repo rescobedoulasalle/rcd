@@ -168,6 +168,77 @@
 - **Loss%**: Permite ver con precisión matemática qué router intermedio del proveedor de internet está perdiendo paquetes.
 - **Last/Avg/Best/Wrst**: Estadísticas de latencia (última, promedio, mejor y peor) por cada salto, ideal para detectar picos de lag intermitentes.
 
+## Crear dos nodos Emisor-Receptor con Docker
+
+- Se puede utilizar Docker para crear dos contenedores que estén conectados en una misma red y tengan los paquetes necesarios para realizar pruebas de comunicación y envío de paquetes.
+- **Dockerfile**
+  - Este archivo crea la imagen rcd_lab01_image_escobedo con OpenJDK 17, Vim, ip, ifconfig, ping, traceroute y mtr.
+```bash
+FROM eclipse-temurin:17-jdk
+
+RUN apt-get update && \
+    apt-get install -y \
+        vim \
+        iproute2 \
+        net-tools \
+        iputils-ping \
+        traceroute \
+        mtr-tiny \
+    && rm -rf /var/lib/apt/lists/*
+
+CMD ["tail", "-f", "/dev/null"]
+```
+- **docker-compose.yml**
+```bash
+services:
+
+  container1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: rcd_lab01_image_escobedo
+    container_name: rcd_lab01_container1_escobedo
+    hostname: container1
+    networks:
+      - rcd_lab01_network_escobedo
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
+
+  container2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: rcd_lab01_image_escobedo
+    container_name: rcd_lab01_container2_escobedo
+    hostname: container2
+    networks:
+      - rcd_lab01_network_escobedo
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
+
+networks:
+  rcd_lab01_network_escobedo:
+    name: rcd_lab01_network_escobedo
+    driver: bridge
+```
+- **Construir la imagen y crear los contenedores**
+- Desde la carpeta donde están Dockerfile y docker-compose.yml:
+```bash
+docker compose up -d --build
+```
+```bash
+docker ps
+```
+```bash
+docker exec -it rcd_lab01_container1_escobedo bash
+```
+- Si quieres eliminar los contenedores y la red creada por Compose:
+```bash
+docker compose down
+```
+
 ## Referencias 
 - [Cisco Networking Academy - Recursos de aprendizaje - Cisco Packet Tracer
 ](https://www.netacad.com/resources/lab-downloads?courseLang=es-XL)
