@@ -83,7 +83,7 @@
  
 ## Envío de una Simple PDU en Packet Tracer
 
-![Simple PDU](simple-pdu.png)
+![Simple PDU](img/simple-pdu.png)
 
 - En redes de datos, PDU significa Protocol Data Unit (Unidad de Datos del Protocolo). Es el término técnico que se utiliza para referirse a un bloque de información que viaja por la red en una capa específica del modelo OSI.
 - Dependiendo de la capa donde se encuentre, la PDU cambia de nombre:
