@@ -16,10 +16,10 @@
 
 ![Secciones en CPT](img/cpt-secciones.png)
 
-- Sección 1: Consiste en la barra de herramientas con la cual se puede crear un nuevo esquema, guardar una configuración, zoom, entre otras funciones.
-- Sección 2: Corresponde al área de trabajo, sobre la cual se realiza el dibujo del esquema topológico de la red.
-- Sección 3: Sección correspondiente al grupo de elementos disponibles para la implementación de cualquier esquema topológico, el cual incluye: Routers, Switches, Cables para conexión, dispositivos terminales (PCs, impresoras, Servidores), Dispositivos Inalámbricos, entre otros.
-- Sección 4: Lista el conjunto de elementos que hacen parte del dispositivo seleccionado en la sección 3. A continuación se ilustran el conjunto de elementos que hacen parte de cada grupo de dispositivos.
+- **Sección 1**: Consiste en la barra de herramientas con la cual se puede crear un nuevo esquema, guardar una configuración, zoom, entre otras funciones.
+- **Sección 2**: Corresponde al área de trabajo, sobre la cual se realiza el dibujo del esquema topológico de la red.
+- **Sección 3**: Sección correspondiente al grupo de elementos disponibles para la implementación de cualquier esquema topológico, el cual incluye: Routers, Switches, Cables para conexión, dispositivos terminales (PCs, impresoras, Servidores), Dispositivos Inalámbricos, entre otros.
+- **Sección 4**: Lista el conjunto de elementos que hacen parte del dispositivo seleccionado en la sección 3. A continuación se ilustran el conjunto de elementos que hacen parte de cada grupo de dispositivos.
   - Routers: Series 1800, 2600, 2800, Genéricos.
   - Switches: Series 2950,2960, Genérico, Bridge.
   - Dispositivos Inalámbricos: Access-Point, Router Inalámbrico.
