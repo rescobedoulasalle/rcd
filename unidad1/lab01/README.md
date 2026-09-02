@@ -22,10 +22,10 @@
 - Sección 4: Lista el conjunto de elementos que hacen parte del dispositivo seleccionado en la sección 3. A continuación se ilustran el conjunto de elementos que hacen parte de cada grupo de dispositivos.
   - Routers: Series 1800, 2600, 2800, Genéricos.
   - Switches: Series 2950,2960, Genérico, Bridge.
- - Dispositivos Inalámbricos: Access-Point, Router Inalámbrico.
- - Tipos de conexiones disponibles: Cable Serial, consola, directo, cruzado, fibra óptica, teléfono, entre otras.
- - Dispositivos terminales: PC, Servidores, Impresoras, Teléfonos IP.
- - Dispositivos Adicionales: PC con tarjeta inalámbrica.
+  - Dispositivos Inalámbricos: Access-Point, Router Inalámbrico.
+  - Tipos de conexiones disponibles: Cable Serial, consola, directo, cruzado, fibra óptica, teléfono, entre otras.
+  - Dispositivos terminales: PC, Servidores, Impresoras, Teléfonos IP.
+  - Dispositivos Adicionales: PC con tarjeta inalámbrica.
 
 ## Referencias 
 - [Cisco Networking Academy - Recursos de aprendizaje - Cisco Packet Tracer
