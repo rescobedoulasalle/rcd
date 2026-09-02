@@ -239,6 +239,12 @@ docker exec -it rcd_lab01_container1_escobedo bash
 docker compose down
 ```
 
+## Actividades
+Trabajar preferentemente en grupos de 2 estudiantes.
+Elaborar un informe detallado, paso a paso, que explique e incluya capturas de pantalla.
+1. Crear una LAN con 3 computadoras de escritorio conectadas a un switch por cable. A su vez, existe un router que brinda la pasarela al switch por cable y a otros 2 equipos inalámbricamente (laptops).
+2. Crear dos contenedores en Docker de acuerdo con la nomenclatura utilizada para realizar la inspección de las interfaces de red, el diagnóstico de conectividad y el trazado de rutas. 
+
 ## Referencias 
 - [Cisco Networking Academy - Recursos de aprendizaje - Cisco Packet Tracer
 ](https://www.netacad.com/resources/lab-downloads?courseLang=es-XL)
