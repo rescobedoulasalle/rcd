@@ -109,6 +109,14 @@
   - Haz clic en el botón de Play (Capture / Forward, que tiene un icono de una flecha hacia la derecha con una barra vertical).
   - Cada vez que hagas clic, verás cómo el sobre avanza de un equipo a otro. El proceso completo simula la ida (petición) y la vuelta (respuesta) del paquete. Al finalizar con éxito, el sobre mostrará una pequeña marca de verificación verde.
 
+## Inspección de Interfaces de Red
+
+- Estas herramientas permiten verificar qué tarjetas de red (físicas o virtuales) están activas, sus direcciones IP, máscaras de subred y direcciones MAC.
+- **Comando ip a (o ip address)**
+  - Es la herramienta moderna y estándar en todas las distribuciones Linux actuales (paquete iproute2).
+    ´´´ip a´´´
+
+
 ## Referencias 
 - [Cisco Networking Academy - Recursos de aprendizaje - Cisco Packet Tracer
 ](https://www.netacad.com/resources/lab-downloads?courseLang=es-XL)
