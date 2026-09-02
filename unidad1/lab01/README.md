@@ -58,7 +58,7 @@
   - Para que los dispositivos inalámbricos tengan acceso a las PCs que ya tenías, el router debe estar unido al switch central.
   - Selecciona la herramienta de Connections (icono del Rayo) y elige el cable negro continuo (Copper Straight-Through).
   - Haz clic en el Switch0 y conéctalo en cualquier puerto disponible (por ejemplo, FastEthernet0/3).
-  - Lleva el cable hacia el Home Gateway y conéctalo estrictamente en el puerto Ethernet 1 (no lo conectes en el puerto Internet, ya que ese se usa para módems externos).
+  - Lleva el cable hacia el Home Router y conéctalo estrictamente en el puerto Ethernet 1 (no lo conectes en el puerto Internet, ya que ese se usa para módems externos).
 - **Paso 6: Modificar la Laptop para que use Wi-Fi (¡Muy Importante!)**
   - En Packet Tracer, las laptops vienen de fábrica únicamente con una tarjeta de red para cable (Ethernet). Debes cambiarla físicamente por una tarjeta inalámbrica.
   - Haz clic sobre la Laptop para abrir su ventana de configuración.
