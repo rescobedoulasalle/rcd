@@ -80,7 +80,34 @@
   - En la Laptop, ve a Desktop y abre el Command Prompt (Consola).
   - Escribe ping 192.168.1.10 (la IP de la PC0) y presiona Enter.
   - Si los paquetes son recibidos con éxito, tu red híbrida (cableada e inalámbrica) está completamente operativa.
+ 
+## Envío de una Simple PDU en Packet Tracer
 
+![Simple PDU](simple-pdu.png)
+
+- En redes de datos, PDU significa Protocol Data Unit (Unidad de Datos del Protocolo). Es el término técnico que se utiliza para referirse a un bloque de información que viaja por la red en una capa específica del modelo OSI.
+- Dependiendo de la capa donde se encuentre, la PDU cambia de nombre:
+  - En la capa de Aplicación, la PDU son los Datos puros.
+  - En la capa de Transporte, la PDU se llama Segmento (TCP) o Datagrama (UDP).En la capa de Red, la PDU se llama Paquete (donde viajan las direcciones IP).
+  - En la capa de Enlace de Datos, la PDU se llama Trama o Frame (donde viajan las direcciones MAC).
+- En Cisco Packet Tracer, cuando usas la herramienta de "Simple PDU" (el icono del sobre cerrado), estás simulando el envío de un paquete Ping (ICMP) de una máquina a otra para verificar si hay comunicación rápida.
+
+- **Paso 9: Selecciona la herramienta PDU**
+  -Ve a la barra de herramientas del lado derecho (o superior, según tu versión de Packet Tracer).
+  - Busca el icono de un sobre cerrado. Al pasar el mouse por encima, dirá Add Simple PDU (o puedes presionar el atajo de teclado letra P). Tu cursor del mouse se transformará en el icono de un sobre.
+- **Paso 10: Marca el Origen y el Destino**
+  - Haz un clic sobre la Laptop o la PC desde donde quieres que salga el mensaje (Origen).
+  - Mueve el mouse (verás que el sobre sigue pegado al cursor) y haz un segundo clic sobre el dispositivo que deseas recibir el mensaje, por ejemplo, la PC0 (Destino).
+- **Paso 11: Revisa el resultado instantáneo (Modo Realtime)**
+  - Mira la esquina inferior derecha de la pantalla. Verás un panel expandible llamado Simulation Panel / PDU List.
+  - Si la barra está oculta, haz clic en la pequeña flecha del extremo inferior derecho para desplegarla.
+  - Allí aparecerá una línea con los detalles del envío. Si todo está bien configurado, en la columna Last Status verás un texto en color verde que dice Successful (Exitoso). Si hay un error de IPs o cables, dirá Failed (Fallido).
+- Paso 12: Ver el viaje en cámara lenta (Modo Simulation)**
+  - Para ver el recorrido exacto que hace el sobre a través del Router Wi-Fi y el Switch:
+  - Haz clic en la pestaña Simulation (justo detrás del botón Realtime en la esquina inferior derecha). Se abrirá el panel de simulación.
+  - Verás el sobre físicamente posicionado encima de tu dispositivo de origen.
+  - Haz clic en el botón de Play (Capture / Forward, que tiene un icono de una flecha hacia la derecha con una barra vertical).
+  - Cada vez que hagas clic, verás cómo el sobre avanza de un equipo a otro. El proceso completo simula la ida (petición) y la vuelta (respuesta) del paquete. Al finalizar con éxito, el sobre mostrará una pequeña marca de verificación verde.
 
 ## Referencias 
 - [Cisco Networking Academy - Recursos de aprendizaje - Cisco Packet Tracer
