@@ -112,12 +112,61 @@
 ## Inspección de Interfaces de Red
 
 - Estas herramientas permiten verificar qué tarjetas de red (físicas o virtuales) están activas, sus direcciones IP, máscaras de subred y direcciones MAC.
+  
 - **Comando ip a (o ip address)**
   - Es la herramienta moderna y estándar en todas las distribuciones Linux actuales (paquete iproute2).
     ```bash
     ip a
     ```
+  - **lo**: Interfaz de loopback (local, siempre 127.0.0.1).
+  - **eth0, enp3s0, wlan0**: Nombres de las interfaces físicas (Ethernet o Wi-Fi).
+  - **inet**: Muestra la dirección IPv4 asignada y su máscara en formato CIDR (ej. 192.168.1.15/24).
+  - **link/ether**: Muestra la dirección MAC física del dispositivo.
+  - **UP**: Indica que la interfaz está encendida y operativa.
 
+- **Comando ifconfig**
+  - Es la herramienta tradicional. Aunque está obsoleta (deprecated) y ha sido reemplazada por ip, todavía se encuentra en muchos sistemas antiguos o servidores estables (paquete net-tools).
+  ```bash
+  ifconfig
+  ```
+  - **inet**: Dirección IPv4.
+  - **netmask**: Máscara de subred tradicional (ej. 255.255.255.0).
+  - **ether**: Dirección MAC.
+  - **RX packets / TX packets**: Estadísticas de paquetes recibidos y transmitidos (útil para detectar errores o pérdida de paquetes a nivel de hardware).
+ 
+## Diagnóstico de Conectividad Básico
+
+- Una vez verificada la interfaz local, el siguiente paso es comprobar si el equipo puede comunicarse con otros nodos de la red.
+- **Comando ping**
+  - Envía paquetes de solicitud de eco (ICMP Echo Request) a un destino para verificar si está encendido y accesible.
+  ```bash
+  ping 8.8.8.8
+  ```
+  ```bash
+  ping -c 4 google.com
+  ```
+  - **time=XX ms**: El tiempo de ida y vuelta (Round Trip Time o RTT). Valores bajos indican una conexión rápida.
+  - **packet loss**: El porcentaje de paquetes perdidos. Lo ideal es 0%. Si es mayor, hay problemas de saturación, interferencia o fallas en el cableado.
+ 
+## Trazado de Rutas
+- Cuando el comando ping falla o la conexión es lenta, el trazado de rutas ayuda a identificar exactamente en qué punto o salto (hop) de la red pública o privada se está interrumpiendo o ralentizando el tráfico.
+  
+  - **Comando traceroute**
+  - Muestra la ruta exacta que toman los paquetes desde tu equipo hasta el destino, listando cada uno de los routers (saltos) por los que pasa.
+   ```bash
+  traceroute google.com
+  ```
+  - **Cómo funciona**: Incrementa el tiempo de vida (TTL) del paquete de 1 en 1. Cada router en el camino descarta el paquete cuando el TTL llega a cero y devuelve un mensaje de error ICMP, revelando su identidad.
+  - **Qué buscar**: Si ves asteriscos (* * *), significa que ese router intermedio tiene bloqueados los paquetes de diagnóstico por motivos de seguridad o que la red se cayó en ese punto exacto.
+ 
+## Comando mtr (My Traceroute)
+- Es una herramienta avanzada que combina la funcionalidad de ping y traceroute en una interfaz interactiva y en tiempo real.
+  ```bash
+  mtr google.com
+  ```
+- **Ventajas**: No realiza una sola pasada como traceroute, sino que sigue enviando paquetes continuamente a cada salto.
+- **Loss%**: Permite ver con precisión matemática qué router intermedio del proveedor de internet está perdiendo paquetes.
+- **Last/Avg/Best/Wrst**: Estadísticas de latencia (última, promedio, mejor y peor) por cada salto, ideal para detectar picos de lag intermitentes.
 
 ## Referencias 
 - [Cisco Networking Academy - Recursos de aprendizaje - Cisco Packet Tracer
