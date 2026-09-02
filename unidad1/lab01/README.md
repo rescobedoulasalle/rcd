@@ -27,7 +27,7 @@
   - Dispositivos terminales: PC, Servidores, Impresoras, Teléfonos IP.
   - Dispositivos Adicionales: PC con tarjeta inalámbrica.
 
- ### LAN (Red de Area Local)
+ ## LAN (Red de Area Local)
 
 ![LAN](img/cpt-lan.png)
 
