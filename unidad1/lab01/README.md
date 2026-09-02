@@ -114,7 +114,9 @@
 - Estas herramientas permiten verificar qué tarjetas de red (físicas o virtuales) están activas, sus direcciones IP, máscaras de subred y direcciones MAC.
 - **Comando ip a (o ip address)**
   - Es la herramienta moderna y estándar en todas las distribuciones Linux actuales (paquete iproute2).
-    `ip a`
+    ```bash
+    ip a
+    ```
 
 
 ## Referencias 
