@@ -14,6 +14,8 @@
 - Herramienta de simulación para la configuración de redes.
 - Puedes experimentar mientras construyes, administrar y asegurar infraestructuras.
 
+![Secciones en CPT](img/cpt-secciones.png)
+
 ## Referencias 
 - [Cisco Networking Academy - Recursos de aprendizaje - Cisco Packet Tracer
 ](https://www.netacad.com/resources/lab-downloads?courseLang=es-XL)
