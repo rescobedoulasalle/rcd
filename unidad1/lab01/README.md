@@ -68,7 +68,7 @@
   - En la lista de módulos de la izquierda, selecciona el primero llamado WPC300N (es la tarjeta Wi-Fi de 2.4GHz).
   - Arrastra ese módulo WPC300N hacia el hueco vacío en el dibujo de la laptop.
   - Vuelve a hacer clic en el botón de encendido para prender la laptop.
-  - Nota: Al encenderla, verás que aparece automáticamente una línea discontinua que une la Laptop con el Home Gateway. Esto significa que ya se asociaron por Wi-Fi de forma abierta.
+  - Nota: Al encenderla, verás que aparece automáticamente una línea discontinua que une la Laptop con el Home Router. Esto significa que ya se asociaron por Wi-Fi de forma abierta.
 - **Paso 7: Ajustar el direccionamiento IP de la Laptop**
   - Para que toda la red se comunique en el mismo segmento que tus PCs anteriores (192.168.1.X), haremos lo siguiente:
   - Haz clic en el Home Gateway, ve a la pestaña Config y en el menú izquierdo selecciona LAN.
