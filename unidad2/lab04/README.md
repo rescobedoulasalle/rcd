@@ -22,7 +22,7 @@
 |Apellidos y Nombres de Integrante 3|Descripción de la tarea.|100%|
 |Apellidos y Nombres de Integrante 4|Descripción de la tarea.|100%|
 
-## Actividades:
+## Actividades previas:
 - **Construir la imagen y crear los contenedores**
 - Desde la carpeta donde están Dockerfile y docker-compose.yml:
 ```bash
@@ -41,6 +41,9 @@ docker exec -it rcd_lab04_container2_escobedo bash
 ```bash
 docker compose down
 ```
+
+## Capturando paquetes con WireShark
+- [![Video captura de paquetes de Wireshark](wireshark_youtube2.png)](https://www.youtube.com/watch?v=RsJKO8OwwuE)
 
 ## Comandos individuales para eliminar todos los artefactos de este laboratorio
 
