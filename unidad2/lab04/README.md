@@ -42,6 +42,16 @@ docker exec -it rcd_lab04_container2_escobedo bash
 docker compose down
 ```
 
+## Tarea: Actividades a Desarrollar en Laboratorio
+1. Formar grupos de hasta 4 integrantes.
+2. Avisar al profesor cual será el respositorio a clonar faltando 10 minutos para culminar la clase.
+3. Crear host utilizando cualquiera de la opciones A, B, C o D.
+4. Capturar paquetes de las comunicaciones:
+   - Comunicación simplex.
+   - Comunicación dúplex o bidirencional.
+   - Comunicación orientada a conexión.
+5. Capturar pantallas y redactar un informe en el README.md del alumno responsable del grupo. 
+
 ## Capturando paquetes con WireShark
 - [![Video captura de paquetes de Wireshark](wireshark_youtube2.png)](https://www.youtube.com/watch?v=RsJKO8OwwuE)
 
@@ -86,3 +96,6 @@ docker network ls
 ```bash
 docker network rm rcd_lab04_network_escobedo
 ```
+
+# Referencias
+- [Cap 4. El API de Sockets. Pag. 98-106 ]((https://drive.google.com/file/d/1IWbPqprv7DjRywDDr67QuPHK1Y4LZIbX/view?usp=sharing))
