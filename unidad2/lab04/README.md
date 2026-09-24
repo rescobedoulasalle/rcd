@@ -21,3 +21,65 @@
 |Apellidos y Nombres de Integrante 2|Descripción de la tarea.|100%|
 |Apellidos y Nombres de Integrante 3|Descripción de la tarea.|100%|
 |Apellidos y Nombres de Integrante 4|Descripción de la tarea.|100%|
+
+## Actividades:
+- **Construir la imagen y crear los contenedores**
+- Desde la carpeta donde están Dockerfile y docker-compose.yml:
+```bash
+docker compose up -d --build
+```
+```bash
+docker ps
+```
+```bash
+docker exec -it rcd_lab04_container1_escobedo bash
+```
+```bash
+docker exec -it rcd_lab04_container2_escobedo bash
+```
+- Si quieres eliminar los contenedores y la red creada por Compose:
+```bash
+docker compose down
+```
+
+## Comandos individuales para eliminar todos los artefactos de este laboratorio
+
+```bash
+docker ps
+```
+
+```bash
+docker stop rcd_lab04_container1_escobedo
+```
+
+```bash
+docker stop rcd_lab04_container2_escobedo
+```
+
+```bash
+docker ps -a
+```
+
+```bash
+docker rm rcd_lab04_container1_escobedo
+```
+
+```bash
+docker rm rcd_lab04_container2_escobedo
+```
+
+```bash
+docker images
+```
+
+```bash
+docker rmi rcd_lab04_image_escobedo:latest
+```
+
+```bash
+docker network ls
+```
+
+```bash
+docker network rm rcd_lab04_network_escobedo
+```
