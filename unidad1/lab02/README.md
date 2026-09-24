@@ -12,7 +12,7 @@
 
 - Se puede utilizar Docker para crear dos contenedores que estén conectados en una misma red y tengan los paquetes necesarios para realizar pruebas de comunicación y envío de paquetes.
 - **Dockerfile**
-  - Este archivo crea la imagen rcd_lab01_image_escobedo con OpenJDK 17, Vim, ip, ifconfig, ping, traceroute y mtr.
+  - Este archivo crea la imagen rcd_lab02_image_escobedo con OpenJDK 17, Vim, ip, ifconfig, ping, traceroute y mtr.
 ```bash
 FROM eclipse-temurin:17-jdk
 
@@ -36,11 +36,11 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: rcd_lab01_image_escobedo
-    container_name: rcd_lab01_container1_escobedo
+    image: rcd_lab02_image_escobedo
+    container_name: rcd_lab02_container1_escobedo
     hostname: container1
     networks:
-      - rcd_lab01_network_escobedo
+      - rcd_lab02_network_escobedo
     stdin_open: true
     tty: true
     restart: unless-stopped
@@ -49,18 +49,18 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: rcd_lab01_image_escobedo
-    container_name: rcd_lab01_container2_escobedo
+    image: rcd_lab02_image_escobedo
+    container_name: rcd_lab02_container2_escobedo
     hostname: container2
     networks:
-      - rcd_lab01_network_escobedo
+      - rcd_lab02_network_escobedo
     stdin_open: true
     tty: true
     restart: unless-stopped
 
 networks:
-  rcd_lab01_network_escobedo:
-    name: rcd_lab01_network_escobedo
+  rcd_lab02_network_escobedo:
+    name: rcd_lab02_network_escobedo
     driver: bridge
 ```
 - **Construir la imagen y crear los contenedores**
@@ -72,7 +72,7 @@ docker compose up -d --build
 docker ps
 ```
 ```bash
-docker exec -it rcd_lab01_container1_escobedo bash
+docker exec -it rcd_lab02_container1_escobedo bash
 ```
 - Si quieres eliminar los contenedores y la red creada por Compose:
 ```bash
