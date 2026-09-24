@@ -6,7 +6,7 @@
 - Es un analizador de paquetes de red gratuito y de código abierto que permite capturar e inspeccionar en tiempo real el tráfico que circula por una red de comunicaciones.
 - Descargar Wireshark: https://www.wireshark.org/#download
 - Vea el video para instalar Wireshark en GNU/Linux:
-- ![Video instalación de Wireshark](wireshark_youtube.png)
+- [![Video instalación de Wireshark](wireshark_youtube.png)](https://www.youtube.com/watch?v=opVVhChYFyg)
 
 ## Cree hosts para probar sus comunicaciones:
 - Opción A: Utilizar el sistema operativo en 2 o más computadoras de laboratorio (se utilizará la red LAN del laboratorio).
