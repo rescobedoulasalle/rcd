@@ -40,6 +40,6 @@ services:
     restart: unless-stopped
 
 networks:
-  rcd_lab02_network_escobedo:
+  rcd_lab04_network_escobedo:
     name: rcd_lab04_network_escobedo
     driver: bridge
