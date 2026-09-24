@@ -1,6 +1,6 @@
 # Laboratorio 04
 
-## Tema: Wireshark
+## Tema: Analizar paquetes con Wireshark
 
 ## Wireshark:
 - Es un analizador de paquetes de red gratuito y de código abierto que permite capturar e inspeccionar en tiempo real el tráfico que circula por una red de comunicaciones.
