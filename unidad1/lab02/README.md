@@ -167,3 +167,45 @@ Elaborar un informe detallado, paso a paso, que explique e incluya capturas de p
 - [traceroute(8) - Linux man page](https://linux.die.net/man/8/traceroute)
 - [M. L. Liu. (2004). Computación Distribuida Fundamentos y Aplicaciones. Pearson](https://drive.google.com/file/d/1IWbPqprv7DjRywDDr67QuPHK1Y4LZIbX/view?usp=sharing). 
 
+## Comandos individuales para eliminar todos los artefactos de este laboratorio
+
+```bash
+docker ps
+```
+
+```bash
+docker stop rcd_lab02_container1_escobedo
+```
+
+```bash
+docker stop rcd_lab02_container2_escobedo
+```
+
+```bash
+docker ps -a
+```
+
+```bash
+docker rm rcd_lab02_container1_escobedo
+```
+
+```bash
+docker rm rcd_lab02_container2_escobedo
+```
+
+```bash
+docker images
+```
+
+```bash
+docker rmi rcd_lab02_image_escobedo:latest
+```
+
+```bash
+docker network ls
+```
+
+```bash
+docker network rm rcd_lab02_network_escobedo
+```
+
