@@ -1,0 +1,45 @@
+services:
+
+  container1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: rcd_lab04_image_escobedo
+    container_name: rcd_lab04_container1_escobedo
+    hostname: container1
+    networks:
+      - rcd_lab04_network_escobedo
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
+
+  container2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: rcd_lab04_image_escobedo
+    container_name: rcd_lab04_container2_escobedo
+    hostname: container2
+    networks:
+      - rcd_lab04_network_escobedo
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
+
+ container3:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: rcd_lab04_image_escobedo
+    container_name: rcd_lab04_container3_escobedo
+    hostname: container3
+    networks:
+      - rcd_lab04_network_escobedo
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
+
+networks:
+  rcd_lab02_network_escobedo:
+    name: rcd_lab04_network_escobedo
+    driver: bridge
