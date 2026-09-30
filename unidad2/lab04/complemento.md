@@ -1,3 +1,4 @@
+```bash
 ┌──────────────────────────────┐
 │ Docker Network               │
 │                              │
@@ -20,7 +21,9 @@
              ▲
              │
          Wireshark
+```
 
+```bash
 PARTE 1
 Socket Java
     │
@@ -30,8 +33,9 @@ Socket Java
     └──────── Wireshark ─────────┘
              ↓
        mensaje visible
+```
 
-
+```bash
 PARTE 2
 Socket Java + Cifrado
     │
@@ -51,8 +55,10 @@ Socket Java + Cifrado
              Wireshark
                  ↓
           mensaje NO visible
+```
 
 ## Prueba
+```bash
 Mensaje original
        ↓
      CIFRAR
@@ -66,6 +72,7 @@ Mensaje original
     RECEPTOR
        ↓
   ERROR DE AUTENTICACIÓN
+```
 
 ### Prueba A — Texto plano
 - Enviar: Este mensaje contiene información confidencial.
@@ -112,7 +119,7 @@ Tabla comparativa de los algoritmos.
 ¿Qué ocurre cuando se modifica un mensaje cifrado?
 
 ## Entregables
-
+```bash
 lab04/
 ├── README.md
 ├── src/
@@ -123,6 +130,7 @@ lab04/
 │   ├── ...
 │   └── ...
 └── ...
+```
 
 ### 8. Conclusiones
 
