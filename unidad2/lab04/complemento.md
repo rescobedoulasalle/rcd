@@ -17,6 +17,35 @@
     - mensaje recuperado
 
 Java proporciona la clase javax.crypto.Cipher para realizar cifrado y descifrado, permitiendo especificar transformaciones como algoritmo/modo/padding.
+```bash
+| Algoritmo            | Tipo           | Uso en el laboratorio  |
+| -------------------- | -------------- | ---------------------- |
+| AES/GCM/NoPadding    | Simétrico      | **Principal**          |
+| AES/CBC/PKCS5Padding | Simétrico      | Comparación            |
+| ChaCha20-Poly1305    | Simétrico/AEAD | Comparación            |
+| RSA/OAEP             | Asimétrico     | Comparación            |
+| SHA-256              | Hash           | Integridad, no cifrado |
+```
+- SHA-256 no es un algoritmo de cifrado: no permite recuperar el mensaje original.
+- Para AES recomiendo GCM como implementación principal, porque además de confidencialidad proporciona autenticación/integridad. La documentación de Java advierte también que el IV/nonce de GCM debe ser único para cada operación con una misma clave.
+
+## Arquitectura
+```bash
+              RED / SOCKET
+              
+┌─────────────┐                    ┌─────────────┐
+│   EMISOR    │                    │  RECEPTOR   │
+│             │                    │             │
+│ "Hola"      │                    │             │
+│     │       │                    │             │
+│     ▼       │                    │             │
+│   AES-GCM   │                    │   AES-GCM   │
+│     │       │                    │      ▲      │
+│     ▼       │                    │      │      │
+│ "8F2A..." ──┼───────────────────►│ "Hola"     │
+│             │                    │             │
+└─────────────┘                    └─────────────┘
+```
 
 ```bash
 ┌──────────────────────────────┐
