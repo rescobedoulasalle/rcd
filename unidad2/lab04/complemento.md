@@ -174,6 +174,10 @@ lab04/
 ├── src/
 │   ├── Ejemplo1Emisor.java   (Envía sin cifrar)
 │   ├── Ejemplo1Receptor.java
+│   ├── Ejemplo1Emisor2.java   (Envía con cifrado)
+│   ├── Ejemplo1Receptor2.java
+│   ├── Ejemplo2Emisor.java   (Envía sin cifrar)
+│   ├── Ejemplo2Receptor.java
 │   ├── Ejemplo2Emisor2.java   (Envía con cifrado)
 │   ├── Ejemplo2Receptor2.java
 │   ├── ...
