@@ -1,3 +1,23 @@
+# Laboratorio 04 
+
+## Complemento : Comunicación emisor/receptor y cifrado de mensajes en Java
+
+## Etapas:
+1. Comunicación sin cifrado
+  - Emisor → Receptor
+  - Envío de mensaje mediante sockets.
+  - Visualización del mensaje original.
+2. Comunicación cifrada
+  - Emisor cifra el mensaje.
+  - Envía el texto cifrado.
+  - Receptor descifra.
+  - Se muestra:
+    - mensaje original
+    - mensaje cifrado
+    - mensaje recuperado
+
+Java proporciona la clase javax.crypto.Cipher para realizar cifrado y descifrado, permitiendo especificar transformaciones como algoritmo/modo/padding.
+
 ```bash
 ┌──────────────────────────────┐
 │ Docker Network               │
@@ -135,3 +155,6 @@ lab04/
 ### 8. Conclusiones
 
 Cada integrante debe escribir una conclusión.
+
+## Referencia:
+- [Class Cipher](https://docs.oracle.com/en/java/javase/26/docs/api/java.base/javax/crypto/Cipher.html)
