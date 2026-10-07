@@ -99,3 +99,45 @@ docker network rm rcd_lab04_network_escobedo
 
 # Referencias
 - [Cap 4. El API de Sockets. Pag. 98-106 ]((https://drive.google.com/file/d/1IWbPqprv7DjRywDDr67QuPHK1Y4LZIbX/view?usp=sharing))
+
+```bash
+import java.net.*;
+import java.io.*;
+
+
+public class Ejemplo2EmisorReceptor {
+
+    public static void main(String[] args) {
+        if (args.length != 4) {
+            System.out.println("Este programa requiere 4 argumentos de línea de mandato");
+            return;
+        }
+        try {
+            InetAddress maquinaReceptora = InetAddress.getByName(args[0]);
+            int puertoReceptor = Integer.parseInt(args[1]);
+            int miPuerto = Integer.parseInt(args[2]);
+            String mensaje = args[3];
+
+            // instancia un socket datagrama para enviar y recibir datos
+            MiSocketDatagrama miSocket = new MiSocketDatagrama(miPuerto);
+            // plazo máximo de espera al recibir (20 s), ver setSoTimeout en Tabla 4.2
+            miSocket.setSoTimeout(20000);
+
+            System.out.println("[EMISOR] Enviando a " + args[0] + ":" + puertoReceptor
+                               + " -> " + mensaje);
+            miSocket.enviaMensaje(maquinaReceptora, puertoReceptor, mensaje);
+
+            // ahora espera recibir un datagrama por el socket
+            System.out.println("[EMISOR] Esperando respuesta en el puerto " + miPuerto + "...");
+            System.out.println("[EMISOR] Respuesta recibida: " + miSocket.recibeMensaje());
+            miSocket.close();
+        } // fin de try
+        catch (InterruptedIOException ex) {
+            System.out.println("[EMISOR] Tiempo agotado: no llegó ninguna respuesta.");
+        }
+        catch (Exception ex) {
+            ex.printStackTrace();
+        } // fin de catch
+    } // fin de main
+} // fin de class
+```
