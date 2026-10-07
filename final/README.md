@@ -945,7 +945,7 @@ Al finalizar el trabajo, cada grupo deberá presentar un servicio que no solamen
 
 El resultado final deberá representar el trabajo de un verdadero:
 
-## 👨‍💻 Administrador de Redes
+## Administrador de Redes
 
 con capacidad para:
 
