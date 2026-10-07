@@ -6,7 +6,7 @@
 
 ## Trabajo Final Integrador
 
-### 🛡️ Administración, Seguridad y Monitoreo de Servicios de Red
+### Administración, Seguridad y Monitoreo de Servicios de Red
 
 ---
 
