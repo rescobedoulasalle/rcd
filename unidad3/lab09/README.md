@@ -880,7 +880,7 @@ Fecha:
 
 \- Capturas de pantalla.
 
-
+![ping pc1 a pc4](img/pingPC1_PC4.png)
 
 \### 25.6 Conclusiones
 
