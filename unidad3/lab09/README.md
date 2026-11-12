@@ -1,8 +1,8 @@
-\# LABORATORIO: Subnetting IPv4 de Clase A, B y C utilizando Cisco Packet Tracer
+# LABORATORIO: Subnetting IPv4 de Clase A, B y C utilizando Cisco Packet Tracer
 
 
 
-\## 1. Información general
+## 1. Información general
 
 
 
@@ -416,7 +416,7 @@ Default Gateway: 192.168.20.129
 
 
 
-!\[opcional](img/topologiaC.png)
+![opcional](img/topologiaC.png)
 
 
 
