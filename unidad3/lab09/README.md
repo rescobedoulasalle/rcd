@@ -482,6 +482,7 @@ ping 192.168.20.1
 
 \### Prueba 3: PC1 a PC3
 
+<img width="1140" height="556" alt="image" src="https://github.com/user-attachments/assets/79f85e94-c649-4f84-ae07-40129c0ebe94" />
 
 
 ```bash
