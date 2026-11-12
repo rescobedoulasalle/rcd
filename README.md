@@ -1,12 +1,2 @@
-# Redes y Comunicación de Datos
+\# Hola soy la rama test
 
-## Profesor
-- Richart Escobedo
-
-## Índice
-
-| Unidad | Laboratorio | Tema |
-| :--- | :--- | :--- |
-| Unidad I | [lab01](https://github.com/rescobedoulasalle/rcd/tree/main/lab01) | Laboratorio Packet Tracer |
-||| Laboratorio GNU/Linux |
-||| Programación Emisor-Receptor |
